@@ -32,7 +32,11 @@ struct NamazHomeView: View {
         .onAppear{
             namazViewModel.getNamazTiming(latitude: latitude, longitude: longitude)
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        
+        
         
     }
 }
@@ -99,7 +103,9 @@ struct CustomView: View {
                 Text(namazModel.data.meta.timezone)
                     .fontWeight(.light)
                     .font(.caption2)
+                    .padding(.bottom)
             }
+            
             
            
            

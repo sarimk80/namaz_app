@@ -11,7 +11,7 @@ struct SplashScreen: View {
     @State var pushNewView: Bool = false
     var body: some View {
         NavigationView {
-            NavigationLink(destination: NamazHomeView(latitude: locationService.lastLocation?.latitude ?? 0.0, longitude: locationService.lastLocation?.longitude ?? 0.0), isActive: $pushNewView) {
+            NavigationLink(destination: BottomNavigation(latitude: locationService.lastLocation?.latitude ?? 0.0, longitude: locationService.lastLocation?.longitude ?? 0.0), isActive: $pushNewView) {
                 ZStack {
                     Color("BackgroundColor")
                         .ignoresSafeArea()
@@ -31,12 +31,13 @@ struct SplashScreen: View {
                             .foregroundColor(Color("AccentColor"))
                             .padding(.top)
                         
-//                        Text("\(locationService.lastLocation?.latitude ?? 0.0)")
-//                        Text("\(locationService.lastLocation?.longitude ?? 0.0)")
+
                         
                     }
                 }
             }
+            .navigationTitle("")
+            .navigationBarHidden(true)
            
         }
         
