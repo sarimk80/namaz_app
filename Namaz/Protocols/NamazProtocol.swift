@@ -9,6 +9,9 @@ import Foundation
 import Combine
 
 protocol NamazProtocol {
+    
+    func HadithProtocol(id:Int) -> AnyPublisher<HadithModel,Error>
+    
     func NamazProtocol(latitude: Double, longitude: Double,timeStamp:Int,method:Int) -> AnyPublisher<NamazModel,Error>
     
     func AsmaUlHusnaProtocol() -> AnyPublisher<AsmaAlHusna,Error>

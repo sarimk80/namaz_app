@@ -11,7 +11,7 @@ struct SplashScreen: View {
     @State var pushNewView: Bool = false
     var body: some View {
         NavigationView {
-            NavigationLink(destination: BottomNavigation(latitude: locationService.lastLocation?.latitude ?? 0.0, longitude: locationService.lastLocation?.longitude ?? 0.0), isActive: $pushNewView) {
+            NavigationLink(destination: BottomNavigation(), isActive: $pushNewView) {
                 ZStack {
                     Color("BackgroundColor")
                         .ignoresSafeArea()

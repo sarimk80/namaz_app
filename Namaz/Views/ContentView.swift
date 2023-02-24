@@ -12,9 +12,11 @@ struct ContentView: View {
     var body: some View {
         switch permissionService.lastLocationStatus {
         case .authorizedAlways:
-            SplashScreen()
+            BottomNavigation()
+                
         case .authorizedWhenInUse:
-            SplashScreen()
+            BottomNavigation()
+                
         case .denied:
             Text("Denied")
         case .notDetermined:

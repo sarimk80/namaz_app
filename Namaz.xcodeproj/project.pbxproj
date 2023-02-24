@@ -10,6 +10,7 @@
 		4A03B37229795CC3006F6FCF /* SurahModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03B37129795CC3006F6FCF /* SurahModel.swift */; };
 		4A03B37429795DFE006F6FCF /* SurahViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03B37329795DFE006F6FCF /* SurahViewModel.swift */; };
 		4A03B37629795EB0006F6FCF /* SurahViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03B37529795EB0006F6FCF /* SurahViewList.swift */; };
+		4A0BD9752992733B005F2F8C /* SurahNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BD9742992733B005F2F8C /* SurahNavigationViewModel.swift */; };
 		4A1EA23A28BC9BD9005B3195 /* NamazApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1EA23928BC9BD9005B3195 /* NamazApp.swift */; };
 		4A1EA23C28BC9BD9005B3195 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1EA23B28BC9BD9005B3195 /* ContentView.swift */; };
 		4A1EA23E28BC9BDB005B3195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1EA23D28BC9BDB005B3195 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		4A3470E6297AA7C60091D2B7 /* SurahDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3470E5297AA7C60091D2B7 /* SurahDetailModel.swift */; };
 		4A3470E8297AA8E20091D2B7 /* SurahDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3470E7297AA8E20091D2B7 /* SurahDetailViewModel.swift */; };
 		4A3470EA297AAB700091D2B7 /* SurahDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3470E9297AAB700091D2B7 /* SurahDetailView.swift */; };
+		4A35278229A61FD200A3BBB1 /* HadithView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35278129A61FD200A3BBB1 /* HadithView.swift */; };
 		4A3E01F7292630010069A57E /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E01F6292630010069A57E /* Compass.swift */; };
 		4A4D64DB28F415DA0086BABA /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D64DA28F415DA0086BABA /* Helpers.swift */; };
 		4A4D64E328F432C60086BABA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4D64E228F432C50086BABA /* WidgetKit.framework */; };
@@ -42,7 +44,10 @@
 		4A4F6508293373E500FBE315 /* asmaAlHusna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F6507293373E500FBE315 /* asmaAlHusna.swift */; };
 		4A4F650A293375FF00FBE315 /* AsmaAlHusnaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F6509293375FF00FBE315 /* AsmaAlHusnaViewModel.swift */; };
 		4A4F650E2933783D00FBE315 /* AsmaAlHusnaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F650D2933783D00FBE315 /* AsmaAlHusnaView.swift */; };
+		4A5217D4297D2EAC00160781 /* SurahCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A5217D2297D2EAC00160781 /* SurahCoreData.xcdatamodeld */; };
 		4A56FEDD28C6096500F48E87 /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A56FEDC28C6096500F48E87 /* PermissionService.swift */; };
+		4AA5E31F29A5F4DD00705A43 /* HadithModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5E31E29A5F4DD00705A43 /* HadithModel.swift */; };
+		4AA5E32129A5F62800705A43 /* HadithViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5E32029A5F62800705A43 /* HadithViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +96,7 @@
 		4A03B37129795CC3006F6FCF /* SurahModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahModel.swift; sourceTree = "<group>"; };
 		4A03B37329795DFE006F6FCF /* SurahViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahViewModel.swift; sourceTree = "<group>"; };
 		4A03B37529795EB0006F6FCF /* SurahViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahViewList.swift; sourceTree = "<group>"; };
+		4A0BD9742992733B005F2F8C /* SurahNavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahNavigationViewModel.swift; sourceTree = "<group>"; };
 		4A1EA23628BC9BD9005B3195 /* Namaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namaz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1EA23928BC9BD9005B3195 /* NamazApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamazApp.swift; sourceTree = "<group>"; };
 		4A1EA23B28BC9BD9005B3195 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 		4A3470E5297AA7C60091D2B7 /* SurahDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahDetailModel.swift; sourceTree = "<group>"; };
 		4A3470E7297AA8E20091D2B7 /* SurahDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahDetailViewModel.swift; sourceTree = "<group>"; };
 		4A3470E9297AAB700091D2B7 /* SurahDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahDetailView.swift; sourceTree = "<group>"; };
+		4A35278129A61FD200A3BBB1 /* HadithView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithView.swift; sourceTree = "<group>"; };
 		4A3E01F6292630010069A57E /* Compass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compass.swift; sourceTree = "<group>"; };
 		4A4D64DA28F415DA0086BABA /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		4A4D64E028F432C50086BABA /* NamazTimingExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NamazTimingExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +132,10 @@
 		4A4F6507293373E500FBE315 /* asmaAlHusna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asmaAlHusna.swift; sourceTree = "<group>"; };
 		4A4F6509293375FF00FBE315 /* AsmaAlHusnaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsmaAlHusnaViewModel.swift; sourceTree = "<group>"; };
 		4A4F650D2933783D00FBE315 /* AsmaAlHusnaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsmaAlHusnaView.swift; sourceTree = "<group>"; };
+		4A5217D3297D2EAC00160781 /* SurahCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SurahCoreData.xcdatamodel; sourceTree = "<group>"; };
 		4A56FEDC28C6096500F48E87 /* PermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionService.swift; sourceTree = "<group>"; };
+		4AA5E31E29A5F4DD00705A43 /* HadithModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithModel.swift; sourceTree = "<group>"; };
+		4AA5E32029A5F62800705A43 /* HadithViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithViewModel.swift; sourceTree = "<group>"; };
 		4ABF873B28C61188009F454E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,6 +224,7 @@
 				4A4F650D2933783D00FBE315 /* AsmaAlHusnaView.swift */,
 				4A03B37529795EB0006F6FCF /* SurahViewList.swift */,
 				4A3470E9297AAB700091D2B7 /* SurahDetailView.swift */,
+				4A35278129A61FD200A3BBB1 /* HadithView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +244,8 @@
 				4A4F6507293373E500FBE315 /* asmaAlHusna.swift */,
 				4A03B37129795CC3006F6FCF /* SurahModel.swift */,
 				4A3470E5297AA7C60091D2B7 /* SurahDetailModel.swift */,
+				4A5217D2297D2EAC00160781 /* SurahCoreData.xcdatamodeld */,
+				4AA5E31E29A5F4DD00705A43 /* HadithModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +257,8 @@
 				4A4F6509293375FF00FBE315 /* AsmaAlHusnaViewModel.swift */,
 				4A03B37329795DFE006F6FCF /* SurahViewModel.swift */,
 				4A3470E7297AA8E20091D2B7 /* SurahDetailViewModel.swift */,
+				4A0BD9742992733B005F2F8C /* SurahNavigationViewModel.swift */,
+				4AA5E32029A5F62800705A43 /* HadithViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -456,9 +471,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5217D4297D2EAC00160781 /* SurahCoreData.xcdatamodeld in Sources */,
 				4A25528D28CC775700B30847 /* SplashScreen.swift in Sources */,
 				4A25529228CC814500B30847 /* NamazProtocol.swift in Sources */,
 				4A3470EA297AAB700091D2B7 /* SurahDetailView.swift in Sources */,
+				4AA5E32129A5F62800705A43 /* HadithViewModel.swift in Sources */,
 				4A1EA23C28BC9BD9005B3195 /* ContentView.swift in Sources */,
 				4A25528F28CC77D900B30847 /* LocationService.swift in Sources */,
 				4A3470E6297AA7C60091D2B7 /* SurahDetailModel.swift in Sources */,
@@ -470,13 +487,16 @@
 				4A4F650E2933783D00FBE315 /* AsmaAlHusnaView.swift in Sources */,
 				4A25529528CC816600B30847 /* NamazModel.swift in Sources */,
 				4A4F6508293373E500FBE315 /* asmaAlHusna.swift in Sources */,
+				4A35278229A61FD200A3BBB1 /* HadithView.swift in Sources */,
 				4A25529728CC868D00B30847 /* NamazService.swift in Sources */,
 				4A25529A28CC91A900B30847 /* NamazViewModel.swift in Sources */,
 				4A25529C28CC93EA00B30847 /* NamazHomeView.swift in Sources */,
 				4A1EA23A28BC9BD9005B3195 /* NamazApp.swift in Sources */,
 				4A03B37629795EB0006F6FCF /* SurahViewList.swift in Sources */,
 				4A2DAC7E2906A62E00712B38 /* BottomNavigation.swift in Sources */,
+				4AA5E31F29A5F4DD00705A43 /* HadithModel.swift in Sources */,
 				4A3470E8297AA8E20091D2B7 /* SurahDetailViewModel.swift in Sources */,
+				4A0BD9752992733B005F2F8C /* SurahNavigationViewModel.swift in Sources */,
 				4A56FEDD28C6096500F48E87 /* PermissionService.swift in Sources */,
 				4A4F650A293375FF00FBE315 /* AsmaAlHusnaViewModel.swift in Sources */,
 			);
@@ -566,13 +586,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -620,13 +641,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -645,13 +667,13 @@
 				INFOPLIST_FILE = Namaz/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Namaz Time";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Getting location to return correct namaz timing based on your current location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Getting location to return correct namaz timing and Quibla based on your current location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,13 +702,13 @@
 				INFOPLIST_FILE = Namaz/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Namaz Time";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Getting location to return correct namaz timing based on your current location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Getting location to return correct namaz timing and Quibla based on your current location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -895,6 +917,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4A5217D2297D2EAC00160781 /* SurahCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4A5217D3297D2EAC00160781 /* SurahCoreData.xcdatamodel */,
+			);
+			currentVersion = 4A5217D3297D2EAC00160781 /* SurahCoreData.xcdatamodel */;
+			path = SurahCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4A1EA22E28BC9BD8005B3195 /* Project object */;
 }

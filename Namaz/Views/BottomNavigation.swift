@@ -8,39 +8,71 @@
 import SwiftUI
 
 struct BottomNavigation: View {
-    let latitude :Double
-    let longitude:Double
+    @StateObject private var locationService:LocationService=LocationService()
+    @StateObject private var surahNavigationViewModel=SurahNavigationViewModel()
     var body: some View {
         TabView {
-            NamazHomeView(latitude: latitude, longitude: longitude)
+            NavigationStack{
+                HadithView()
+            }
+           
                 .tabItem {
-                    Image(systemName: "clock.circle")
-                    Text("Namaz Time")
-
-                }
-            Compass()
-                .tabItem {
+                    Image(systemName: "house")
+                    Text("Hadith")
                     
-                    Image(systemName: "pencil.slash")
-                    Text("Compass")
                 }
-            AsmaAlHusnaView()
-                .tabItem {
-                    Image(systemName: "list.bullet.rectangle.portrait.fill")
-                    Text("Names")
-                }
-            SurahViewList()
-                .tabItem {
-                    Image(systemName: "character.book.closed.ar")
-                    Text("Quran")
-                }
+            NavigationStack {
+                NamazHomeView(latitude: locationService.lastLocation?.latitude ?? 0.0, longitude: locationService.lastLocation?.longitude ?? 0.0)
+                
+            }
+            .tabItem {
+                Image(systemName: "clock.circle")
+                Text("Namaz Time")
+                
+            }
+            NavigationStack {
+                Compass()
+                
+            }
+            .tabItem {
+                
+                Image(systemName: "pencil.slash")
+                Text("Compass")
+            }
+            NavigationStack {
+                AsmaAlHusnaView()
+                
+            }
+            .tabItem {
+                Image(systemName: "list.bullet.rectangle.portrait.fill")
+                Text("Names")
+            }
+            NavigationStack(path: $surahNavigationViewModel.surahPath) {
+                SurahViewList()
+                    .navigationDestination(for: SurahRoute.self, destination: { route in
+                        switch route {
+                        case .detail(let id,let surah):
+                            SurahDetailView(id: id, names: surah)
+                        }
+                    })
+                    .environmentObject(surahNavigationViewModel)
+                
+            }
+            
+            
+            .tabItem {
+                Image(systemName: "character.book.closed.ar")
+                Text("Quran")
+            }
+            
+            
         }
-       
+        
     }
 }
 
 struct BottomNavigation_Previews: PreviewProvider {
     static var previews: some View {
-        BottomNavigation(latitude: 0.0, longitude: 0.0)
+        BottomNavigation()
     }
 }

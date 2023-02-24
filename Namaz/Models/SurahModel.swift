@@ -14,7 +14,7 @@ class SurahModel : Codable{
     let data: [Datum]
 }
 
-struct Datum: Codable {
+struct Datum: Codable, Equatable, Hashable {
     let number: Int
     let name, englishName, englishNameTranslation: String
     let numberOfAyahs: Int

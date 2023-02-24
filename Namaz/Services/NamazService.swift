@@ -9,6 +9,22 @@ import Foundation
 import Combine
 
 class NamazService: NamazProtocol {
+    func HadithProtocol(id: Int) -> AnyPublisher<HadithModel, Error> {
+        let url = URL(string: "https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/\(id).json")
+        
+        return URLSession.shared.dataTaskPublisher(for: url!)
+            .map({$0.data})
+            .decode(type: HadithModel.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
+    
+    
+    //https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/1035.json
+    // 1 - 6000
+    
+    
+    
     func SurahDetailProtocol(id:Int) -> AnyPublisher<SurahDetailModel, Error> {
         let url = URL(string: "https://api.alquran.cloud/v1/surah/\(id)/editions/quran-uthmani,en.asad")
         

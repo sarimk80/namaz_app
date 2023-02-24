@@ -12,7 +12,7 @@ struct AsmaAlHusnaView: View {
     @StateObject private var asmaAlHusnaViewModel:AsmaAlHusmaViewModel=AsmaAlHusmaViewModel()
     
     var body: some View {
-        NavigationView{
+        
             VStack{
                 switch asmaAlHusnaViewModel.asmaAlHusnaViewState{
                 case .Initial:
@@ -22,24 +22,27 @@ struct AsmaAlHusnaView: View {
                     ProgressView()
                     
                 case .Loaded(let asmaAlHusna):
-                    List(asmaAlHusna.data,id: \.number){data in
-                        HStack{
-                            Text("\(data.number)")
-                            Text(data.transliteration)
-                                .padding(.leading)
-                            Spacer()
-                            Text(data.name)
+                    ScrollViewReader { proxy in
+                        List(asmaAlHusna.data,id: \.number){data in
+                            HStack{
+                                Text("\(data.number)")
+                                Text(data.transliteration)
+                                    .padding(.leading)
+                                Spacer()
+                                Text(data.name)
+                            }
                         }
+                        .listStyle(.plain)
                     }
-                    .listStyle(.plain)
+                   
                     
                     
                 case .Error(let errorString):
                     Text(errorString)
                 }
             }
+            
             .navigationTitle("Asma Al Husna")
-        }
         
         
         .onAppear{
@@ -53,6 +56,9 @@ struct AsmaAlHusnaView: View {
 
 struct AsmaAlHusnaView_Previews: PreviewProvider {
     static var previews: some View {
-        AsmaAlHusnaView()
+        NavigationStack {
+            AsmaAlHusnaView()
+        }
+        
     }
 }

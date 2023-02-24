@@ -17,8 +17,18 @@ enum SurahViewState {
 
 class SurahViewModel : ObservableObject{
     private let namazService:NamazService=NamazService()
+    let defaults = UserDefaults.standard
     var cancellable=Set<AnyCancellable>()
     @Published  var surahViewState:SurahViewState=SurahViewState.Initial
+    @Published var surahNumber:Int = 1
+    
+    func getSurahNumber() {
+        self.surahNumber = defaults.integer(forKey: "surah_number")
+    }
+    
+    func putSurahNumber(number:Int) {
+        defaults.set(number, forKey: "surah_number")
+    }
     
     func getAllNames()  {
         namazService.SurahProtocol()
